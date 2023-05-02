@@ -15,13 +15,13 @@ import LeFenceCo from './components/OurPartners/LeFenceCo';
 import AhrensRanchWildlifeLLC from './components/OurPartners/AhrensRanchWildlifeLLC';
 import RanchersTitle from './components/OurPartners/RanchersTitle';
 import Contact from './components/Contact';
-import Nav from './components/Nav';
+import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 
 function App() {
 	return (
 		<div className='App'>
-			<Nav />
+			<NavBar />
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/about-us' element={<AboutUs />} />
@@ -42,7 +42,6 @@ function App() {
 				<Route path='/rancherstitle' element={<RanchersTitle />} />
 				<Route path='/contact' element={<Contact />} />
 			</Routes>
-			<Footer />
 		</div>
 	);
 }
